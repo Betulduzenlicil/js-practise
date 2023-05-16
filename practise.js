@@ -120,42 +120,42 @@
 // } while ((number<0 || number>100) && count<=3);
 
 //? ÖRNEK:8 SAYI BULMACA OYUNU KURGULAYINIZ--------------------
-let again = true
-while (again) {
-    const number = Math.round(Math.random()*100)
-// const number = 5;
-let userNumber;
-let count = 1
-let tryAgain =0;
-while (count<=5) {
-    userNumber = +prompt(`Please enter your guess. This is your ${count}. guess`)
-    if (userNumber<0 || userNumber>=0) {
-        if (userNumber == number) {
-            console.log(`Nice try. Your ${count}. guess is right`);
-            break;
-        }else{
-            console.log(`Please enter your guess again. Your ${count}. guess is wrong`);
-            count++;
-            if (userNumber> number) {
-                console.log("Lower");
-            }else{
-                console.log("Bigger");
-            }
-        }
-    }
-    else{
-        console.log(`Please enter NUMBER`);
-        count++
-    }
-}
-    console.log(`Number was ${number}`);
-    tryAgain = prompt("Press 1 to try again");
-    if (tryAgain == 1) {
-    }else{
-        console.log("See You Next Time");
-        again = false;
-    }
-}
+// let again = true
+// while (again) {
+//     const number = Math.round(Math.random()*100)
+// // const number = 5;
+// let userNumber;
+// let count = 1
+// let tryAgain =0;
+// while (count<=5) {
+//     userNumber = +prompt(`Please enter your guess. This is your ${count}. guess`)
+//     if (userNumber<0 || userNumber>=0) {
+//         if (userNumber == number) {
+//             console.log(`Nice try. Your ${count}. guess is right`);
+//             break;
+//         }else{
+//             console.log(`Please enter your guess again. Your ${count}. guess is wrong`);
+//             count++;
+//             if (userNumber> number) {
+//                 console.log("Lower");
+//             }else{
+//                 console.log("Bigger");
+//             }
+//         }
+//     }
+//     else{
+//         console.log(`Please enter NUMBER`);
+//         count++
+//     }
+// }
+//     console.log(`Number was ${number}`);
+//     tryAgain = prompt("Press 1 to try again");
+//     if (tryAgain == 1) {
+//     }else{
+//         console.log("See You Next Time");
+//         again = false;
+//     }
+// }
 //? ÖRNEK:9 FİBONACİ DİZİSİNDEKİ SAYILARI BULAN KODU YAZDIRINIZ --------------
 
  //* Fibonacci sayısı 0 1 1 2 3 5 8 13 21 34 
@@ -195,6 +195,83 @@ while (count<=5) {
 //     buyukSayi1 = toplamSayi1;
 // }
 
+//? ÖRNEK:10 kullanıcıdan alğınız boy ve kilo bilgilerine göre vücut kitle indeksini hesaplayan kodu yazınız
+
+//* vücut kitle indeksi: kilo / boyun karesi
+
+//0--18 zayıf
+//19--25 normal
+//26--30 kilolu
+//31--35 şişman
+// let indexfirstPerson;
+// let indexsecondPerson;
+// let firstPersonkg= +prompt("kilo biginizi giriniz")
+// let secondPersonkg= +prompt("kilo biginizi giriniz")
+
+// let firstPersonBoy= +prompt("boyunuzu giriniz")
+// let secondPersonBoy= +prompt("boyunuzu giriniz")
+
+// indexfirstPerson=(secondPersonkg) /(secondPersonBoy**2);
+// indexsecondPerson=(secondPersonkg) /(secondPersonBoy**2);
+
+// console.log(indexfirstPerson, indexsecondPerson)
+
+//  let higherİndex= indexfirstPerson > indexsecondPerson;
+
+//  console.log(higherİndex);
+
+
+
+//? ÖRNEK: 11 
+// let d = new Date();
+// let birthday = new Date (1984,4,5);
+// console.log(d.getFullYear());
+// console.log(d.getDay());
+// console.log(d.getHours());
+// console.log(d.getFullYear());
+// console.log(d.getMonth());
+// console.log(d.getTime());
+
+// console.log(d.getFullYear()- birthday.getFullYear());
+// console.log(d.getMonth()- birthday.getMonth());
+// console.log(d.getDay()- birthday.getDay());
+// console.log(d.getFullYear()- birthday.getFullYear());
+
+
+// console.log(d.setFullYear(2020));
+
+
+//? ÖRNEK:12
+let tarih = new Date();
+
+console.log(tarih);
+console.log(tarih.getMonth()+1);
+console.log(tarih.getDate());
+
+let atarih = new Date("12/4/1984 22:25:10")
+console.log(atarih)
+
+
+// 1/1/1990 tarihinden birgün öncesini gösteren kodu yazınız
+
+let guncelTarih = new Date("1/1/1990")
+dayOfMonth= guncelTarih.getDate();
+guncelTarih.setDate(dayOfMonth-1);
+console.log(guncelTarih);
+
+
+
+//? ÖRNEK:13 2019 YILINDA ANNELER GÜNÜ AYIN KAÇINDA KUTLANACAK HER YIL MAYIS AYININ İKİNCİ PAZAR GÜNÜ KUTLANMAKTADIR.
+ let mumDay = new Date();
+ mumDay.setFullYear(2019);
+ mumDay.setDate(1);
+ mumDay.setMonth(4);
+ 
+ while(mumDay.getDay() !=0){
+   mumDay.setDate(mumDay.getDate()+1)
+ }
+ mumDay.setDate(mumDay.getDate()+7)
+ console.log(mumDay)
 
 
 
