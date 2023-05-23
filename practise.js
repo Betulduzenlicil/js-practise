@@ -35,7 +35,7 @@
 // console.log(`${i}. sayi :`, sayi);
 // }
 
-//? ÖRNEK:4 KULLANICININ GİRDİĞİ SAYININ ASAL OLUP OLÖADAIĞINI BELİRLEYEN KODU YAZDIRINIZ ----
+//? ÖRNEK:4 KULLANICININ GİRDİĞİ SAYININ ASAL OLUP OLMADAIĞINI BELİRLEYEN KODU YAZDIRINIZ ----
 //*1.YOL
 // let sayi = +prompt("sayi giriniz")
 
@@ -252,26 +252,27 @@ let atarih = new Date("12/4/1984 22:25:10")
 console.log(atarih)
 
 
-// 1/1/1990 tarihinden birgün öncesini gösteren kodu yazınız
+//? 1/1/1990 tarihinden birgün öncesini gösteren kodu yazınız
 
-let guncelTarih = new Date("1/1/1990")
-dayOfMonth= guncelTarih.getDate();
-guncelTarih.setDate(dayOfMonth-1);
-console.log(guncelTarih);
+// let guncelTarih = new Date("1/1/1990")
+// dayOfMonth= guncelTarih.getDate();
+// guncelTarih.setDate(dayOfMonth-1);
+// console.log(guncelTarih);
 
 
 
 //? ÖRNEK:13 2019 YILINDA ANNELER GÜNÜ AYIN KAÇINDA KUTLANACAK HER YIL MAYIS AYININ İKİNCİ PAZAR GÜNÜ KUTLANMAKTADIR.
- let mumDay = new Date();
- mumDay.setFullYear(2019);
- mumDay.setDate(1);
- mumDay.setMonth(4);
+
+//  let mumDay = new Date();
+//  mumDay.setFullYear(2019);
+//  mumDay.setDate(1);
+//  mumDay.setMonth(4);
  
- while(mumDay.getDay() !=0){
-   mumDay.setDate(mumDay.getDate()+1)
- }
- mumDay.setDate(mumDay.getDate()+7)
- console.log(mumDay)
+//  while(mumDay.getDay() !=0){
+//    mumDay.setDate(mumDay.getDate()+1)
+//  }
+//  mumDay.setDate(mumDay.getDate()+7)
+//  console.log(mumDay)
 
 
 
