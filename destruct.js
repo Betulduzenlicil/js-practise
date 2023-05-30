@@ -160,22 +160,22 @@
 
 //? Rest Operator ile Ayıklama:
 
-// const person = {
-//     name: 'John',
-//     age: 30,
-//     city: 'New York',
-//     country: 'USA'
-//   };
+const person = {
+    name: 'John',
+    age: 30,
+    city: 'New York',
+    country: 'USA'
+  };
   
-//   function printPerson({ name, age, ...rest }) {
-//     console.log(name, age);
-//     console.log(rest);
-//   }
+  function printPerson({ name, age, ...rest }) {
+    console.log(name, age);
+    console.log(rest);
+  }
   
-//   printPerson(person);
+  printPerson(person);
   // John 30
   // { city: 'New York', country: 'USA' }
   
-//   Bu örnekte, person objesini printPerson fonksiyonuna parametre olarak geçiriyoruz. Fonksiyon içinde name ve age özelliklerini ayıkladıktan sonra, geri kalan özellikleri rest adlı bir obje olarak ayıklıyoruz. Bu sayede, kalan özelliklere erişebiliriz.
+//!   Bu örnekte, person objesini printPerson fonksiyonuna parametre olarak geçiriyoruz. Fonksiyon içinde name ve age özelliklerini ayıkladıktan sonra, geri kalan özellikleri rest adlı bir obje olarak ayıklıyoruz. Bu sayede, kalan özelliklere erişebiliriz.
 
 
