@@ -52,26 +52,27 @@
 
   //?İç İçe Objelerde Ayıklama:
 
-//   const person = {
-//     name: "John",
-//     age: 30,
-//     address: {
-//       city: "New York",
-//       country: "USA"
-//     }
-//   };
+  const person = {
+    name: "John",
+    age: 30,
+    address: {
+      city: "New York",
+      country: "USA"
+    }
+  };
 
 //   const {name, age, address:{city, country}}=person
 
 //   console.log(country)
 //   console.log(address)//Hata verir
   
-//   const { name, age, address: { city, country } } = person;
+  // const { name, age, address: { city, country } } = person;
+  const { name, age, city} = person;
   
-//   console.log(name); // John
-//   console.log(age); // 30
-//   console.log(city); // New York
-//   console.log(country); // USA
+  console.log(name); // John
+  console.log(age); // 30
+  console.log(city); // New York
+  console.log(country); // USA
   
  // Bu örnekte, person nesnesindeki address özelliğini ayıklarken, address içindeki city ve country özelliklerini de ayıklıyoruz. Bu şekilde, iç içe geçmiş objelerdeki özelliklere erişebiliriz. Burada address'i değişken olarak almıyor, sadece içindekkilere ulaşmak için kullanıyor. Console'a address'i yazdırmaya çalıştığımızda hata verir.
 
