@@ -120,42 +120,42 @@
 // } while ((number<0 || number>100) && count<=3);
 
 //? ÖRNEK:8 SAYI BULMACA OYUNU KURGULAYINIZ--------------------
-// let again = true
-// while (again) {
-//     const number = Math.round(Math.random()*100)
-// // const number = 5;
-// let userNumber;
-// let count = 1
-// let tryAgain =0;
-// while (count<=5) {
-//     userNumber = +prompt(`Please enter your guess. This is your ${count}. guess`)
-//     if (userNumber<0 || userNumber>=0) {
-//         if (userNumber == number) {
-//             console.log(`Nice try. Your ${count}. guess is right`);
-//             break;
-//         }else{
-//             console.log(`Please enter your guess again. Your ${count}. guess is wrong`);
-//             count++;
-//             if (userNumber> number) {
-//                 console.log("Lower");
-//             }else{
-//                 console.log("Bigger");
-//             }
-//         }
-//     }
-//     else{
-//         console.log(`Please enter NUMBER`);
-//         count++
-//     }
-// }
-//     console.log(`Number was ${number}`);
-//     tryAgain = prompt("Press 1 to try again");
-//     if (tryAgain == 1) {
-//     }else{
-//         console.log("See You Next Time");
-//         again = false;
-//     }
-// }
+let again = true
+while (again) {
+    const number = Math.round(Math.random()*100)
+
+let userNumber;
+let count = 1
+let tryAgain =0;
+while (count<=5) {
+    userNumber = +prompt(`Please enter your guess. This is your ${count}. guess`)
+    if (userNumber<0 || userNumber>=100) {
+        if (userNumber == number) {
+            console.log(`Nice try. Your ${count}. guess is right`);
+            break;
+        }else{
+            console.log(`Please enter your guess again. Your ${count}. guess is wrong`);
+            count++;
+            if (userNumber> number) {
+                console.log("Lower");
+            }else{
+                console.log("Bigger");
+            }
+        }
+    }
+    else{
+        console.log(`Please enter NUMBER`);
+        count++
+    }
+}
+    console.log(`Number was ${number}`);
+    tryAgain = prompt("Press 1 to try again");
+    if (tryAgain == 1) {
+    }else{
+        console.log("See You Next Time");
+        again = false;
+    }
+}
 //? ÖRNEK:9 FİBONACİ DİZİSİNDEKİ SAYILARI BULAN KODU YAZDIRINIZ --------------
 
  //* Fibonacci sayısı 0 1 1 2 3 5 8 13 21 34 
